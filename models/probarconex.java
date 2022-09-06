@@ -11,11 +11,11 @@ public class probarconex extends javax.swing.JFrame {
     private static Connection conn;
     private static final String driver = "com.mysql.cj.jdbc.Driver";  
     private static final String user = "root";
-<<<<<<< HEAD
+
     private static final String password = "benites";
-=======
-    private static final String password = "sandro";
->>>>>>> ae8142a9124095f2a243f2a3fefbb2fc60630dbe
+
+    
+
     private static final String url = "jdbc:mysql://localhost:3306/scv_database" ; //establecer conexión
     
     public void conector() {
