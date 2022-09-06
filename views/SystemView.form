@@ -834,7 +834,7 @@
                   </AuxValues>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="160" y="340" width="600" height="130"/>
+                      <AbsoluteConstraints x="30" y="340" width="930" height="180"/>
                     </Constraint>
                   </Constraints>
 
@@ -1165,7 +1165,7 @@
                   </AuxValues>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="30" y="350" width="930" height="100"/>
+                      <AbsoluteConstraints x="30" y="350" width="930" height="170"/>
                     </Constraint>
                   </Constraints>
 
@@ -1438,7 +1438,7 @@
                   </AuxValues>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="30" y="410" width="930" height="100"/>
+                      <AbsoluteConstraints x="30" y="410" width="930" height="110"/>
                     </Constraint>
                   </Constraints>
 
@@ -1831,7 +1831,7 @@
                   </AuxValues>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="30" y="410" width="930" height="100"/>
+                      <AbsoluteConstraints x="30" y="410" width="930" height="110"/>
                     </Constraint>
                   </Constraints>
 
@@ -2324,7 +2324,7 @@
                   </AuxValues>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="40" y="30" width="920" height="310"/>
+                      <AbsoluteConstraints x="40" y="30" width="920" height="440"/>
                     </Constraint>
                   </Constraints>
 
@@ -2332,13 +2332,13 @@
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                               <Component id="btn_register_employee5" min="-2" pref="149" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                               <Component id="btn_register_employee3" min="-2" pref="149" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                               <Component id="btn_register_employee6" min="-2" pref="149" max="-2" attributes="0"/>
-                              <EmptySpace pref="47" max="32767" attributes="0"/>
+                              <EmptySpace pref="39" max="32767" attributes="0"/>
                               <Component id="btn_register_employee7" min="-2" pref="149" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                               <Component id="btn_register_employee4" min="-2" pref="149" max="-2" attributes="0"/>
@@ -2357,7 +2357,7 @@
                                   <Component id="btn_register_employee3" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
                                   <Component id="btn_register_employee7" alignment="3" min="-2" pref="59" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="164" max="32767" attributes="0"/>
+                              <EmptySpace pref="292" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
