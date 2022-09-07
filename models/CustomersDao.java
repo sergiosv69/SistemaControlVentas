@@ -114,4 +114,4 @@ String query_search_customer = "SELECT FROM customers WHERE id LIKE ´%"+ value 
             return false;
         }
     }
-}
+
