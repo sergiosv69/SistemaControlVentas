@@ -7,6 +7,8 @@ import java.sql.ResultSet;
 import java.sql.Timestamp;
 import java.util.Date;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 import javax.swing.JOptionPane;
 
 public class CustomersDao {
@@ -42,5 +44,37 @@ public class CustomersDao {
         
         }
         
+    }
+    //listar clientes
+    public List listCustomerQuery(String value){
+    List<Customers> list_customers =new ArrayList(); 
+String query = " SELECT FROM customers";
+String query_search_customer = "SELECT FROM customers WHERE id LIKE ´%"+ value +"´%";
+    try{
+            conn = cn.getConnection();
+            if (value.equalsIgnoreCase("")) { //Si no ingresa nada ejecuta esto, sino el else
+            pst = conn.prepareStatement(query);
+            rs = pst.executeQuery();
+        } else {
+            pst = conn.prepareStatement(query_search_customer);
+            rs = pst.executeQuery();
+        }
+        while (rs.next()) {
+            Customers customer = new Customers();
+            customer.setId(rs.getInt("id"));
+            customer.setFull_name(rs.getString("full name"));
+            customer.setAddress(rs.getString("Address"));
+            customer.setTelephone(rs.getString("Telephone"));
+            customer.setEmail(rs.getString("Email"));
+            list_customers.add(customer);
+            }
+        
+        }catch(SQLException e){
+            JOptionPane.showMessageDialog(null, e.toString());                         
+        }
+        return list_customers;
+    }
+        
+
     }
 }
