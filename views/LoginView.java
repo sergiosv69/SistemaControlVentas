@@ -1,10 +1,18 @@
 package views;
 
+import controllers.LoginController;
+import models.Employees;
+import models.EmployeesDao;
+
 public class LoginView extends javax.swing.JFrame {
 
-   
+    Employees employee = new Employees();
+    EmployeesDao employee_dao = new EmployeesDao();
+    
     public LoginView() {
         initComponents();
+        //Controlador del login
+        LoginController employee_login = new LoginController(employee, employee_dao, this);
         setSize(930,450);
         setResizable(false);
         setTitle("Ingresar al sistema");
