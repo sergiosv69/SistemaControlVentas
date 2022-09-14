@@ -1,9 +1,33 @@
 package views;
 
+import controllers.CustomersController;
 import controllers.SettingsController;
+import models.Customers;
+import models.CustomersDao;
 
 public class SystemView extends javax.swing.JFrame {
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //Clientes 
+    Customers customer = new Customers();
+    CustomersDao customersDao = new CustomersDao();
+    
     public SystemView() {
         initComponents();
         setSize(1208,680);  //QUE APAREZCA DE ESE TAMAÑO
@@ -15,6 +39,11 @@ public class SystemView extends javax.swing.JFrame {
         SettingsController setting = new SettingsController(this);
         
         this.repaint();
+        
+        
+
+        //Controlador de clientes
+        CustomersController customer_account = new CustomersController(customer customersDao, this);
     }
 
   

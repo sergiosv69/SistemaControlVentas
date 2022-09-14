@@ -2,6 +2,8 @@ package controllers;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.HashSet;
+import java.util.Set;
 import javax.swing.JOptionPane;
 import models.Customers;
 import models.CustomersDao;
@@ -32,6 +34,18 @@ public class CustomersController implements ActionListener{
                     || views.txt_customer_email.getText().equals("")){
                 
                 JOptionPane.showMessageDialog(null, "Todos los campos son obligatorios");
+            }else{
+                customer.setId(Integer.parseInt(views.txt_customer_id.getText().trim()));
+                customer.setFull_name(views.txt_customer_fullname.getText().trim());
+                customer.setAddress(views.txt_customer_address.getText().trim());
+                customer.setTelephone(views.txt_customer_telephone.getText().trim()); 
+                customer.setEmail(views.txt_customer_email.getText().trim());
+                
+                if(customerDao.registerCustomerQuery(customer)){
+                    JOptionPane.showMessageDialog(null, "Cliente registrado con éxito"); 
+                }else{
+                    JOptionPane.showMessageDialog(null, "Ha ocurrido un error al registrar al cliente");
+                } 
             }
         }
     }
