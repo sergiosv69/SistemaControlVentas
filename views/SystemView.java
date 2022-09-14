@@ -43,7 +43,7 @@ public class SystemView extends javax.swing.JFrame {
         
 
         //Controlador de clientes
-        CustomersController customer_account = new CustomersController(customer customersDao, this);
+        CustomersController customer_account = new CustomersController(customer, customersDao, this);
     }
 
   

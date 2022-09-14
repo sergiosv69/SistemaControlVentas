@@ -17,15 +17,9 @@ public class CustomersDao {
     Connection conn;
     PreparedStatement pst;
     ResultSet rs;
-<<<<<<< HEAD
-
-    //registrar cliente
-    public boolean registerCustomerQuery(Customers customer) {
-=======
-    
-    //registrar cliente
+  
+    //Registrar cliente
     public boolean registerCustomerQuery(Customers customer){
->>>>>>> 93748d36c3f50d15e0a6786e29d1c7f73daecbeb
         String query = "INSERT INTO customers (id, full_name, address, telephone, email, created, updated)"
                 + "VALUES (?,?,?,?,?,?,?)";
 
@@ -50,20 +44,12 @@ public class CustomersDao {
 
     }
 
-    //listar clientes
-<<<<<<< HEAD
+    //Listar clientes
     public List listCustomerQuery(String value) {
         List<Customers> list_customers = new ArrayList();
         String query = "SELECT * FROM customers";
         String query_search_customer = "SELECT * FROM customers WHERE id LIKE ´%" + value + "%'";
-        try {
-=======
-    public List listCustomerQuery(String value){
-    List<Customers> list_customers =new ArrayList(); 
-    String query = " SELECT FROM customers";
-    String query_search_customer = "SELECT FROM customers WHERE id LIKE ´%"+ value +"´%";
-    try{
->>>>>>> 93748d36c3f50d15e0a6786e29d1c7f73daecbeb
+         try{
             conn = cn.getConnection();
             if (value.equalsIgnoreCase("")) { //Si no ingresa nada ejecuta esto, sino el else
                 pst = conn.prepareStatement(query);
@@ -87,29 +73,16 @@ public class CustomersDao {
         }
         return list_customers;
     }
-<<<<<<< HEAD
     
     //Modificar clientes
     public boolean updateCustomerQuery(Customers customer) {
         String query = "UPDATE customers SET full_name = ?, address = ?, telephone = ?, email = ?, updated = ? "
                 + "WHERE id = ?";
-
-        Timestamp datetime = new Timestamp(new Date().getTime());
-        try {
-            conn = cn.getConnection();
-            pst = conn.prepareStatement(query);
-=======
-    //modificar cliente
-    public boolean updateCustomerQuery(Customers customer){
-        String query = "UPDATE customers SET full_name=?, address=?, telephone=?, email=?, updated=?";
-               
-        
         Timestamp datetime = new Timestamp (new Date().getTime());
         try{
             conn = cn.getConnection();
             pst = conn.prepareStatement(query);
            
->>>>>>> 93748d36c3f50d15e0a6786e29d1c7f73daecbeb
             pst.setString(1, customer.getFull_name());
             pst.setString(2, customer.getAddress());
             pst.setString(3, customer.getTelephone());
@@ -118,7 +91,6 @@ public class CustomersDao {
             pst.setInt(6, customer.getId());
             pst.execute();
             return true;
-<<<<<<< HEAD
 
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, "Error al modificar los datos del cliente");
@@ -127,19 +99,7 @@ public class CustomersDao {
 
     }
     
-    //Eliminar clientes
-=======
-            
-                    
-        }catch(SQLException e){
-            JOptionPane.showMessageDialog(null, "error al modificar los datos del cliente");
-            return false;
-        
-        }
-        
-    }
-    //eliminar cliente
->>>>>>> 93748d36c3f50d15e0a6786e29d1c7f73daecbeb
+    //Eliminar cliente
     public boolean deleteCustomerQuery(int id){
         String query = "DELETE FROM customers WHERE id = " + id;
         try{
@@ -153,7 +113,3 @@ public class CustomersDao {
         }
     }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 93748d36c3f50d15e0a6786e29d1c7f73daecbeb
