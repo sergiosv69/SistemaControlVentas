@@ -35,7 +35,7 @@ public class SystemView extends javax.swing.JFrame {
         setTitle("Panel de administración");  //TITULO A LA VENTANA
         setLocationRelativeTo(null); //CENTRADO
         
-        //controlador del Settings
+        //Controlador del Settings
         SettingsController setting = new SettingsController(this);
         
         this.repaint();
