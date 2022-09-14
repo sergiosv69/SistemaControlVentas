@@ -26,7 +26,7 @@ public class CustomersController implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == views.btn_register_customer){
-            //Verificamos si los campos estan vacios
+            //Verificamos si los campos están vacios
             if(views.txt_customer_id.getText().equals("")
                     || views.txt_customer_fullname.getText().equals("")
                     || views.txt_customer_address.getText().equals("")
@@ -49,6 +49,4 @@ public class CustomersController implements ActionListener{
             }
         }
     }
-    
-    
 }
