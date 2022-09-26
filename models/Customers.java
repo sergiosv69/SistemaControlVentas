@@ -7,20 +7,20 @@ public class Customers {
     private String address;
    private String telephone;
    private String email;
-   private String creared;
-   private String update;
+   private String created;
+   private String updated;
 
     public Customers() {
     }
 
-    public Customers(int id, String full_name, String address, String telephone, String email, String creared, String update) {
+    public Customers(int id, String full_name, String address, String telephone, String email, String created, String updated) {
         this.id = id;
         this.full_name = full_name;
         this.address = address;
         this.telephone = telephone;
         this.email = email;
-        this.creared = creared;
-        this.update = update;
+        this.created = created;
+        this.updated = updated;
     }
 
     public int getId() {
@@ -63,20 +63,20 @@ public class Customers {
         this.email = email;
     }
 
-    public String getCreared() {
-        return creared;
+    public String getCreated() {
+        return created;
     }
 
-    public void setCreared(String creared) {
-        this.creared = creared;
+    public void setCreated(String created) {
+        this.created = created;
     }
 
-    public String getUpdate() {
-        return update;
+    public String getUpdated() {
+        return updated;
     }
 
-    public void setUpdate(String update) {
-        this.update = update;
+    public void setUpdated(String updated) {
+        this.updated = updated;
     }
    
    

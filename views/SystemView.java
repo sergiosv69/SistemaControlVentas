@@ -1,23 +1,32 @@
 package views;
 
+import controllers.CustomersController;
 import controllers.SettingsController;
+import models.Customers;
+import models.CustomersDao;
 
 public class SystemView extends javax.swing.JFrame {
 
+    //Clientes 
+    Customers customer = new Customers();
+    CustomersDao customersDao = new CustomersDao();
+
     public SystemView() {
         initComponents();
-        setSize(1208,680);  //QUE APAREZCA DE ESE TAMAÑO
+        setSize(1208, 680);  //QUE APAREZCA DE ESE TAMAÑO
         setResizable(false); //PARA QUE NO MODIFIQUEN EL TAMAÑO DE LA VENTANA
         setTitle("Panel de administración");  //TITULO A LA VENTANA
         setLocationRelativeTo(null); //CENTRADO
-        
+
         //controlador del Settings
         SettingsController setting = new SettingsController(this);
-        
+
         this.repaint();
+
+        //Controlador de clientes
+        CustomersController customer_account = new CustomersController(customer, customersDao, this);
     }
 
-  
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -1344,7 +1353,7 @@ public class SystemView extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_register_employee7ActionPerformed
 
     private void btn_logoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_logoutActionPerformed
-        if(evt.getSource() == btn_logout){
+        if (evt.getSource() == btn_logout) {
             dispose();
             LoginView login = new LoginView();
             login.setVisible(true);
@@ -1394,15 +1403,15 @@ public class SystemView extends javax.swing.JFrame {
     private javax.swing.JButton btn_cancel_employee;
     private javax.swing.JButton btn_cancel_employee2;
     private javax.swing.JButton btn_confirm_purchase;
-    private javax.swing.JButton btn_confirm_purchase1;
+    public javax.swing.JButton btn_confirm_purchase1;
     private javax.swing.JButton btn_delete_employee;
     private javax.swing.JButton btn_delete_employee2;
     public javax.swing.JButton btn_delete_product;
     private javax.swing.JButton btn_logout;
     private javax.swing.JButton btn_new_purchase;
-    private javax.swing.JButton btn_new_purchase1;
+    public javax.swing.JButton btn_new_purchase1;
     private javax.swing.JButton btn_photo;
-    private javax.swing.JButton btn_register_customer;
+    public javax.swing.JButton btn_register_customer;
     private javax.swing.JButton btn_register_employee;
     private javax.swing.JButton btn_register_employee2;
     private javax.swing.JButton btn_register_employee3;
@@ -1412,7 +1421,7 @@ public class SystemView extends javax.swing.JFrame {
     private javax.swing.JButton btn_register_employee7;
     public javax.swing.JButton btn_register_product;
     private javax.swing.JButton btn_remove_purchase;
-    private javax.swing.JButton btn_remove_purchase1;
+    public javax.swing.JButton btn_remove_purchase1;
     private javax.swing.JButton btn_update_employee;
     private javax.swing.JButton btn_update_employee2;
     public javax.swing.JButton btn_update_product;
@@ -1512,11 +1521,11 @@ public class SystemView extends javax.swing.JFrame {
     public javax.swing.JTable products_table;
     private javax.swing.JTable purchases_table;
     private javax.swing.JTable tablecompras;
-    private javax.swing.JTextField txt_customer_address;
-    private javax.swing.JTextField txt_customer_email;
-    private javax.swing.JTextField txt_customer_fullname;
-    private javax.swing.JTextField txt_customer_id;
-    private javax.swing.JTextField txt_customer_telephone;
+    public javax.swing.JTextField txt_customer_address;
+    public javax.swing.JTextField txt_customer_email;
+    public javax.swing.JTextField txt_customer_fullname;
+    public javax.swing.JTextField txt_customer_id;
+    public javax.swing.JTextField txt_customer_telephone;
     private javax.swing.JTextField txt_employee_address;
     private javax.swing.JTextField txt_employee_address2;
     private javax.swing.JTextField txt_employee_email;
@@ -1544,7 +1553,7 @@ public class SystemView extends javax.swing.JFrame {
     private javax.swing.JTextField txt_purchase_product_name;
     private javax.swing.JTextField txt_purchase_subtotal;
     private javax.swing.JTextField txt_purchase_total_to_pay;
-    private javax.swing.JTextField txt_search_customer;
+    public javax.swing.JTextField txt_search_customer;
     private javax.swing.JTextField txt_search_employee;
     private javax.swing.JTextField txt_search_employee2;
     public javax.swing.JTextField txt_search_product;
