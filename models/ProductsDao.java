@@ -1,4 +1,3 @@
-
 package models;
 
 import java.sql.Connection;
@@ -46,23 +45,13 @@ public class ProductsDao {
         }
         
     } 
-        
-<<<<<<< HEAD
-        
-    //Listar producto
-    public List listProductQuery(String value){
-    List<Products> list_products = new ArrayList(); 
-    String query = "SELECT pro.*, ca.name AS category_name FROM products pro, categories ca WHERE pro.category_id = ca.id";
-    String query_search_customer = "SELECT pro.*, ca.name AS category_name FROM products pro INNER JOIN categories ca" + "ON pro.category_id = ca.id WHERE pro.name LIKE '%" + value + "%'";
-    try{
-=======
+            
     //Listar producto
         public List listProductQuery(String value){
         List<Products> list_products = new ArrayList(); 
         String query = "SELECT pro.*, ca.name AS category_name FROM products pro, categories ca WHERE pro.category_id = ca.id";
         String query_search_customer = "SELECT pro.*, ca.name AS category_name FROM products pro INNER JOIN categories ca" + "ON pro.category_id = ca.id WHERE pro.name LIKE '%" + value + "%'";
         try{
->>>>>>> c209077af99ea49bbdac6c8e156df5a71c9fbc4c
             conn = cn.getConnection();
             if (value.equalsIgnoreCase("")) { //Si no ingresa nada ejecuta esto, sino el else
             pst = conn.prepareStatement(query);
@@ -87,8 +76,6 @@ public class ProductsDao {
         }
         return list_products;
     }
-<<<<<<< HEAD
-=======
          
     //Modificar producto  
         public boolean updateProductQuery(Products product){
@@ -153,9 +140,5 @@ public class ProductsDao {
         }
         return product;
     }
-        
->>>>>>> c209077af99ea49bbdac6c8e156df5a71c9fbc4c
-        
-        
-        
+              
 }
