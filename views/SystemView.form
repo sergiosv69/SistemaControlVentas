@@ -1375,13 +1375,22 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="txt_customer_id">
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                     <Component class="javax.swing.JTextField" name="txt_customer_fullname">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                     <Component class="javax.swing.JTextField" name="txt_customer_address">
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel22">
                       <Properties>
@@ -1400,11 +1409,17 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="txt_customer_telephone">
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                     <Component class="javax.swing.JTextField" name="txt_customer_email">
                       <Properties>
                         <Property name="editable" type="boolean" value="false"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                     <Component class="javax.swing.JButton" name="btn_register_customer">
                       <Properties>
@@ -1416,6 +1431,9 @@
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btn_register_customerActionPerformed"/>
                       </Events>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                     <Component class="javax.swing.JButton" name="btn_confirm_purchase1">
                       <Properties>
@@ -1424,6 +1442,9 @@
                         </Property>
                         <Property name="text" type="java.lang.String" value="Modificar"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                     <Component class="javax.swing.JButton" name="btn_remove_purchase1">
                       <Properties>
@@ -1432,6 +1453,9 @@
                         </Property>
                         <Property name="text" type="java.lang.String" value="Eliminar"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                     <Component class="javax.swing.JButton" name="btn_new_purchase1">
                       <Properties>
@@ -1440,6 +1464,9 @@
                         </Property>
                         <Property name="text" type="java.lang.String" value="Cancelar"/>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -1519,6 +1546,9 @@
                   </Constraints>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txt_search_customer">
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="120" y="350" width="160" height="30"/>
