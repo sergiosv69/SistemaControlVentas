@@ -25,6 +25,7 @@ public class SuppliersController implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        //boton registrar
         if(e.getSource()== views.btn_register_suppliers){
             if(views.txt_suppliers_name.getText().equals("")
                 || views.txt_suppliers_description.getText().equals("")
@@ -56,6 +57,6 @@ public class SuppliersController implements ActionListener{
             
         }
     }
-  
+
   
 }

@@ -19,11 +19,11 @@ public class SystemView extends javax.swing.JFrame {
         
         this.repaint();
         
-        //proveedores 
+        //para proveedores 
         Suppliers supplier = new Suppliers();
         SuppliersDao supplierDao = new SuppliersDao();
         
-        //controlador de proveedores
+        //para controlador de proveedores
         SuppliersController supplier_account = new SuppliersController(supplier, supplierDao, this);
     }
 
