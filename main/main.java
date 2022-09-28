@@ -52,7 +52,7 @@ public class main {
         
             //SystemView formulario = new SystemView(); 
          //formulario.setVisible(true);
-         System.out.println(consultDNIOld("73139024"));
+         System.out.println(consultDNIOld("76241576"));
        
     }
     

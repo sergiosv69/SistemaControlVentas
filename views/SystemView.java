@@ -2,14 +2,11 @@ package views;
 
 import controllers.CustomersController;
 import controllers.SettingsController;
-<<<<<<< HEAD
 import controllers.SuppliersController;
 import models.Suppliers;
 import models.SuppliersDao;
-=======
 import models.Customers;
 import models.CustomersDao;
->>>>>>> 7fc6ba71eeda2cbbe3cc2c5e52a4bc71fdb38a13
 
 public class SystemView extends javax.swing.JFrame {
 
@@ -27,20 +24,18 @@ public class SystemView extends javax.swing.JFrame {
         //controlador del Settings
         SettingsController setting = new SettingsController(this);
 
-        this.repaint();
-<<<<<<< HEAD
-        
+        this.repaint();     
         //para proveedores 
         Suppliers supplier = new Suppliers();
         SuppliersDao supplierDao = new SuppliersDao();
         
         //para controlador de proveedores
         SuppliersController supplier_account = new SuppliersController(supplier, supplierDao, this);
-=======
+
 
         //Controlador de clientes
         CustomersController customer_account = new CustomersController(customer, customersDao, this);
->>>>>>> 7fc6ba71eeda2cbbe3cc2c5e52a4bc71fdb38a13
+
     }
 
     @SuppressWarnings("unchecked")
