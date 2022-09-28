@@ -35,7 +35,11 @@ public class SystemView extends javax.swing.JFrame {
 
         //Controlador de clientes
         CustomersController customer_account = new CustomersController(customer, customersDao, this);
+<<<<<<< HEAD
 
+=======
+        customer_account.listAllCustomers();
+>>>>>>> 1bd5189f68914c4f57fb73a7845c0053916b3b5d
     }
 
     @SuppressWarnings("unchecked")
@@ -734,15 +738,11 @@ public class SystemView extends javax.swing.JFrame {
         jLabel20.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel20.setText("Direccion");
 
-        txt_customer_fullname.setEditable(false);
-
         jLabel22.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel22.setText("Correo");
 
         jLabel23.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel23.setText("Telefono");
-
-        txt_customer_email.setEditable(false);
 
         btn_register_customer.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btn_register_customer.setText("Registrar");
@@ -834,11 +834,11 @@ public class SystemView extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Identificación", "Nombre", "Teléfono", "Dirección", "Correo"
+                "Identificación", "Nombre", "Dirección", "Telefono", "Correo"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false
+                false, false, false, true, true
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -846,9 +846,6 @@ public class SystemView extends javax.swing.JFrame {
             }
         });
         jScrollPane3.setViewportView(customers_table);
-        if (customers_table.getColumnModel().getColumnCount() > 0) {
-            customers_table.getColumnModel().getColumn(3).setResizable(false);
-        }
 
         jPanel14.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, 930, 110));
 
@@ -1424,8 +1421,12 @@ public class SystemView extends javax.swing.JFrame {
     public javax.swing.JComboBox<Object> cmb_product_category;
     private javax.swing.JComboBox<String> cmb_purchase_supplier;
     private javax.swing.JComboBox<String> cmb_rol;
+<<<<<<< HEAD
     public javax.swing.JComboBox<String> cmb_suppliers_city;
     private javax.swing.JTable customers_table;
+=======
+    public javax.swing.JTable customers_table;
+>>>>>>> 1bd5189f68914c4f57fb73a7845c0053916b3b5d
     private javax.swing.JTable employees_table;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JLabel jLabel1;

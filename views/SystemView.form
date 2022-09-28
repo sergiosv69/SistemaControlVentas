@@ -1380,9 +1380,6 @@
                       </AuxValues>
                     </Component>
                     <Component class="javax.swing.JTextField" name="txt_customer_fullname">
-                      <Properties>
-                        <Property name="editable" type="boolean" value="false"/>
-                      </Properties>
                       <AuxValues>
                         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
                       </AuxValues>
@@ -1414,9 +1411,6 @@
                       </AuxValues>
                     </Component>
                     <Component class="javax.swing.JTextField" name="txt_customer_email">
-                      <Properties>
-                        <Property name="editable" type="boolean" value="false"/>
-                      </Properties>
                       <AuxValues>
                         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
                       </AuxValues>
@@ -1491,9 +1485,9 @@
                           <Table columnCount="5" rowCount="0">
                             <Column editable="false" title="Identificaci&#xf3;n" type="java.lang.Object"/>
                             <Column editable="false" title="Nombre" type="java.lang.Object"/>
-                            <Column editable="false" title="Tel&#xe9;fono" type="java.lang.Object"/>
                             <Column editable="false" title="Direcci&#xf3;n" type="java.lang.Object"/>
-                            <Column editable="false" title="Correo" type="java.lang.Object"/>
+                            <Column editable="true" title="Telefono" type="java.lang.Object"/>
+                            <Column editable="true" title="Correo" type="java.lang.Object"/>
                           </Table>
                         </Property>
                         <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -1513,7 +1507,7 @@
                               <Editor/>
                               <Renderer/>
                             </Column>
-                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="false">
+                            <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                               <Title/>
                               <Editor/>
                               <Renderer/>
@@ -1529,6 +1523,9 @@
                           <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                         </Property>
                       </Properties>
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                      </AuxValues>
                     </Component>
                   </SubComponents>
                 </Container>
