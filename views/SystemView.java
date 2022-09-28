@@ -35,11 +35,9 @@ public class SystemView extends javax.swing.JFrame {
 
         //Controlador de clientes
         CustomersController customer_account = new CustomersController(customer, customersDao, this);
-<<<<<<< HEAD
 
-=======
         customer_account.listAllCustomers();
->>>>>>> 1bd5189f68914c4f57fb73a7845c0053916b3b5d
+
     }
 
     @SuppressWarnings("unchecked")
@@ -1292,7 +1290,7 @@ public class SystemView extends javax.swing.JFrame {
         });
         jScrollPane4.setViewportView(tablecompras);
 
-        Menureportes.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 740, 180));
+        Menureportes.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, 740, 180));
 
         jTabbedPane1.addTab("Reportes", Menureportes);
 
@@ -1421,12 +1419,8 @@ public class SystemView extends javax.swing.JFrame {
     public javax.swing.JComboBox<Object> cmb_product_category;
     private javax.swing.JComboBox<String> cmb_purchase_supplier;
     private javax.swing.JComboBox<String> cmb_rol;
-<<<<<<< HEAD
     public javax.swing.JComboBox<String> cmb_suppliers_city;
-    private javax.swing.JTable customers_table;
-=======
     public javax.swing.JTable customers_table;
->>>>>>> 1bd5189f68914c4f57fb73a7845c0053916b3b5d
     private javax.swing.JTable employees_table;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JLabel jLabel1;
