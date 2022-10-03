@@ -64,7 +64,7 @@ public class EmployeesDao {
     
     //Registrar Empleado
     public boolean registerEmployeeQuery(Employees employee){
-        String query = "INSERT INTO employees(id, full_name, username, address, telephone, email, password, rol, created"
+        String query = "INSERT INTO employees(id, full_name, username, address, telephone, email, password, rol, created,"
                 + "updated) VALUES(?,?,?,?,?,?,?,?,?,?)";
     //Conocer la fecha y hora exacta del registro
         Timestamp datetime = new Timestamp(new Date().getTime());
@@ -91,7 +91,7 @@ public class EmployeesDao {
     }
     
     //Listar Empleado
-    public List listEmployeeQuery(String value){
+    public List listEmployeesQuery(String value){
         List<Employees> list_employees = new ArrayList();
         String query = "SELECT * FROM employees ORDER BY rol ASC";  //Que lo ordene por el rol de manera ascendente (Todos los empleados)
         String query_search_employee = "SELECT * FROM employees WHERE id LIKE '%" + value + "%'"; //Cuando lo busca por el buscador

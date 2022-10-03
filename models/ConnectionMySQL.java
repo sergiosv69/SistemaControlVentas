@@ -8,7 +8,7 @@ public class ConnectionMySQL {
     //Definir variables con los nombres correspondientes a la BD
     private String database_name = "scv_database";  
     private String user = "root";
-    private String password = "sandro";
+    private String password = "denis";
     private String url = "jdbc:mysql://localhost:3306/" + database_name; //establecer conexión
     Connection conn =null;
     

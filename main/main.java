@@ -44,7 +44,7 @@ public class main {
 		return getdni;
 	}
     public static void main(String[] args) {
-  
+    
         try {
                 UIManager.setLookAndFeel(new SyntheticaWhiteVisionLookAndFeel());
             } catch (ParseException | UnsupportedLookAndFeelException e) {
@@ -52,7 +52,8 @@ public class main {
         
             //SystemView formulario = new SystemView(); 
          //formulario.setVisible(true);
-         System.out.println(consultDNIOld("73139024"));
+       
+System.out.println(consultDNIOld("73139024"));
        
     }
     

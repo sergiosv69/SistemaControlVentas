@@ -12,7 +12,7 @@ public class probarconex extends javax.swing.JFrame {
     private static final String driver = "com.mysql.cj.jdbc.Driver";  
     private static final String user = "root";
 
-    private static final String password = "sandro";
+    private static final String password = "denis";
 
     
 
